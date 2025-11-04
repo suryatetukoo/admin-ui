@@ -76,27 +76,23 @@
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease;
-  font-size: 0.6rem; /* Font lebih besar */
-  min-width: 210px; /* Lebar minimum */
+  font-size: 0.6rem; 
+  min-width: 210px; 
   
-  /* Default state (belum diklik) */
   background-color: var(--gray-color);
   color: white;
 }
 
-/* State ketika tombol sudah diklik */
 .post-button.clicked {
   background-color: var(--special-red2);
   color: white;
 }
 
-/* Hover effect untuk tombol */
 .post-button:hover {
   background-color: var(--hover-light-red);
   transform: scale(1.05);
 }
 
-/* Hover effect khusus untuk tombol yang sudah diklik */
 .post-button.clicked:hover {
   background-color: var(--hover-light-red);
 }
