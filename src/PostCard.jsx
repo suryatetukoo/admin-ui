@@ -11,7 +11,7 @@ const PostCard = ({ id, userId, title, body }) => {
   return (
     <div className="post-card">
       <div className="post-header">
-        <h3 className="post-title">{title}</h3>
+      <center><h3 className="post-title">{title}</h3> </center>
       </div>
       <div className="post-body">
         <p className="post-content">{body}</p>
@@ -21,7 +21,7 @@ const PostCard = ({ id, userId, title, body }) => {
           className={`post-button ${isClicked ? 'clicked' : ''}`}
           onClick={handleButtonClick}
         >
-          {isClicked ? 'Tombol sudah diklik' : 'Silahkan Klik'}
+          {isClicked ? 'Tombol sudah diklik' : 'Silakan Klik'}
         </button>
       </div>
     </div>

@@ -63,33 +63,40 @@
 
 .post-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center; 
+  align-items: center;
   margin-top: auto;
+  padding: 8px 0;
 }
 
 .post-button {
-  padding: 4px 8px;
+  padding: 10px 20px; 
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease;
-  font-size: 0.7rem;
+  font-size: 0.6rem; /* Font lebih besar */
+  min-width: 210px; /* Lebar minimum */
   
+  /* Default state (belum diklik) */
   background-color: var(--gray-color);
   color: white;
 }
 
+/* State ketika tombol sudah diklik */
 .post-button.clicked {
   background-color: var(--special-red2);
   color: white;
 }
 
+/* Hover effect untuk tombol */
 .post-button:hover {
   background-color: var(--hover-light-red);
   transform: scale(1.05);
 }
 
+/* Hover effect khusus untuk tombol yang sudah diklik */
 .post-button.clicked:hover {
   background-color: var(--hover-light-red);
 }
