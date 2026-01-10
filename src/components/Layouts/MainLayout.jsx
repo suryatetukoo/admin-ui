@@ -85,6 +85,7 @@ function MainLayout(props) {
               ))}
             </div>
           </div>
+        </div>
     <div>
       <div onClick={handleLogout} className="cursor-pointer">
           <div className="flex bg-special-bg3 text-white px-4 py-3 rounded-md">
