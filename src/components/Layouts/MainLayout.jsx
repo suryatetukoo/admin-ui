@@ -72,13 +72,14 @@ function MainLayout(props) {
               ))}
             </nav>
     </div>
-              <div>
-            Themes
-            <div className="flex flex-col sm:flex-row gap-2 items-center">
+             <div className="px-4 py-8 border-t border-gray-800/50">
+          <div className="mb-6 px-4">
+            <p className="text-xs text-gray-500 mb-3 uppercase font-bold text-center sm:text-left">Themes</p>
+            <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
               {themes.map((t) => (
                 <div
                   key={t.name}
-                  className={`${t.bgcolor} w-6 h-6 rounded-md cursor-pointer mb-2`}
+                  className={`${t.bgcolor} w-6 h-6 rounded-md cursor-pointer transition-transform hover:scale-110`}
                   onClick={() => setTheme(t)}
                 ></div>
               ))}
