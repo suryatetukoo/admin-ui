@@ -5,7 +5,7 @@ import CardGoal from '../components/Fragments/CardGoal';
 import CardUpcomingBill from '../components/Fragments/CardUpcomingBill';
 import CardRecentTransaction from '../components/Fragments/CardRecentTransaction';
 import CardStatistic from '../components/Fragments/CardStatistic';
-import CardExpenseBeakdown from '../components/Fragments/CardExpenseBeakdown';
+import CardExpenseBeakdown from '../components/Fragments/CardExpenseBreakdown';
 import { transactions, bills, expensesBreakdowns, balances, expensesStatistics } from '../data';
 import { goalService } from '../services/dataService';
 import { AuthContext } from '../context/authContext';
