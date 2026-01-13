@@ -4,6 +4,7 @@ import SignUpPage from "./pages/signup";
 import ErrorPage from "./pages/404";
 import DashboardPage from "./pages/dashboard";
 import BalancePage from "./pages/balance";
+import ExpensesPage from "./pages/ExpensesPage"; // Pastikan nama file ini sesuai
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/authContext";
@@ -50,6 +51,14 @@ function App() {
       element: (
         <RequireAuth>
           <BalancePage />
+        </RequireAuth>
+      ),
+    },
+    {
+      path: "/expenses",
+      element: (
+        <RequireAuth>
+          <ExpensesPage />
         </RequireAuth>
       ),
     },
