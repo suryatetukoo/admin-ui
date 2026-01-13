@@ -5,7 +5,6 @@ import Button from '../Elements/Button';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-// 1. Membuat Schema Validasi dengan Yup
 const RegisterSchema = Yup.object().shape({
   name: Yup.string()
     .required("Nama wajib diisi"),
@@ -24,7 +23,6 @@ const FormSignUp = ({ onSubmit }) => {
         <h1 className="text-xl font-bold text-gray-900">Create an Account</h1>
       </div>
 
-      {/* 2. Implementasi Formik */}
       <Formik
         initialValues={{
           name: "",
@@ -33,14 +31,12 @@ const FormSignUp = ({ onSubmit }) => {
         }}
         validationSchema={RegisterSchema}
         onSubmit={async (values, { setSubmitting }) => {
-          // Mengirim data ke Parent (SignUpPage)
           await onSubmit(values);
           setSubmitting(false);
         }}
       >
         {({ isSubmitting }) => (
           <Form>
-            {/* NAME FIELD */}
             <div className="mb-6">
               <Field name="name">
                 {({ field }) => (
@@ -60,7 +56,6 @@ const FormSignUp = ({ onSubmit }) => {
               />
             </div>
 
-            {/* EMAIL FIELD */}
             <div className="mb-6">
               <Field name="email">
                 {({ field }) => (
@@ -80,7 +75,6 @@ const FormSignUp = ({ onSubmit }) => {
               />
             </div>
 
-            {/* PASSWORD FIELD */}
             <div className="mb-6">
               <Field name="password">
                 {({ field }) => (
@@ -100,7 +94,6 @@ const FormSignUp = ({ onSubmit }) => {
               />
             </div>
 
-            {/* BUTTON DENGAN LOADING STATE */}
             <Button variant="primary" type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Loading..." : "Sign Up"}
             </Button>
@@ -108,7 +101,6 @@ const FormSignUp = ({ onSubmit }) => {
         )}
       </Formik>
 
-      {/* Pembatas & Google Button tetap sama */}
       <div className="my-9 px-7 flex flex-col justify-center items-center text-xs text-gray-03">
         <div className="border border-gray-05 w-full"></div>
         <div className="px-2 bg-special-mainBg absolute"> or sign up with</div>
@@ -117,7 +109,6 @@ const FormSignUp = ({ onSubmit }) => {
       <div className="mb-8">
         <Button type="button" variant="secondary">
           <span className="flex items-center justify-center">
-            {/* ... SVG Google tetap sama seperti sebelumnya ... */}
             <svg
               className="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
