@@ -1,10 +1,10 @@
 import React from "react";
-import housingIcon from "../../assets/icons/housing.svg"; 
-import foodIcon from "../../assets/icons/food.svg";
-import transportIcon from "../../assets/icons/trasnport.svg";
-import entertainmentIcon from "../../assets/icons/movie.svg";
-import shoppingIcon from "../../assets/icons/shopping.svg";
-import othersIcon from "../../assets/icons/others.svg";
+import housingIcon from "../../assets/icons/Housing.svg"; 
+import foodIcon from "../../assets/icons/Food.svg";
+import transportIcon from "../../assets/icons/Trasnport.svg";
+import entertainmentIcon from "../../assets/icons/Movie.svg";
+import shoppingIcon from "../../assets/icons/Shopping.svg";
+import othersIcon from "../../assets/icons/Others.svg";
 
 const CardExpense = ({ data }) => {
   
